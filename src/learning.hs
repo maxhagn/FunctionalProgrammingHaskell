@@ -34,7 +34,6 @@ mergeSort (n:ns) = quickSort [m | m <- ns, m <= n]
                   ++ [n]
                   ++ quickSort [m | m <- ns, m > n]
                   
-
 main = do
   print ( show ( fac 1 ) )
   print ( show ( fac 2 ) )
